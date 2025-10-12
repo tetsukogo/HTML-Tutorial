@@ -1,3 +1,4 @@
+<!--ハンズオン-->
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -7,39 +8,232 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="header">
+    <!-- headerに変更 -->
+    <header class="header">
       <h1>サンプルサイト</h1>
-      <div class="global-nav">
+      <!-- navタグを使用 -->
+      <nav class="global-nav">
         <ul>
           <li><a href="#">トップページ</a></li>
           <li><a href="#">サービス紹介</a></li>
           <li><a href="#">製品情報</a></li>
           <li><a href="#">ご連絡</a></li>
         </ul>
-      </div>
-    </div>
-    <div class="container">
-      <div class="main">
-        <div class="article">
+      </nav>
+    </header>
+
+    <!-- mainタグを使用 -->
+    <main class="container">
+      <!-- articleタグを使用 -->
+      <article class="main">
+        <!-- sectionタグを使用-->
+        <section class="article">
           <h2>ニュース1</h2>
           <p>ここにニュースの内容が表示されます。</p>
-        </div>
-        <div class="article">
+        </section>
+        <!-- sectionタグを使用-->
+        <section class="article">
           <h2>ニュース2</h2>
           <p>ここにニュースの内容が表示されます。</p>
-        </div>
-      </div>
-      <div class="related">
+        </section>
+      </article>
+
+      <!-- asideタグを使用 -->
+      <aside class="related">
         <h2>おすすめリンク</h2>
         <ul>
           <li><a href="#">リンクA</a></li>
           <li><a href="#">リンクB</a></li>
           <li><a href="#">リンクC</a></li>
         </ul>
-      </div>
-    </div>
-    <div class="footer">
+      </aside>
+    </main>
+
+    <!-- footerに変更 -->
+    <footer class="footer">
       <p>&copy; 2024 サンプルサイト. All rights reserved.</p>
-    </div>
+    </footer>
+  </body>
+</html>
+
+<!--header1 サイト-->
+<header>
+  <h1>私のwebサイト</h1>
+  <navi>
+    <ul>
+      <li><a href="#home">ホーム</a></li>
+      <li><a href="#about">自己紹介</a></li>
+      <li><a href="#contact">お問い合せ</a></li>
+    </ul>
+  </navi>
+</header>
+
+<!--header2 セクション-->
+<article>
+  <header>
+    <h2>セマンティックHTMLとは？</h2>
+    <p>投稿日: 2024年10月12日</p>
+  </header>
+  <p>セマンティックHTMLは、HTMLタグに意味を持たせることで、コンテンツをより構造化された形で表現する技術です。</p>
+</article>
+
+<!--nav-->
+<header>
+  <h1>私のwebサイト</h1>
+  <nav>
+    <ul>
+      <li><a href="#home">ホーム</a></li>
+      <li><a href="#about">私について</a></li>
+      <li><a href="#contact">お問合せ</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>記事とセクションの使い分け例</title>
+  </head>
+  <body>
+    <header>
+      <h1>ニュースサイト</h1>
+      <nav>
+        <ul>
+          <li><a href="#news">最新ニュース</a></li>
+          <li><a href="#sports">スポーツ</a></li>
+          <li><a href="#tech">テクノロジー</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+    <!-- セクションでニュースのカテゴリをまとめる -->
+      <section id="news">
+        <h2>最新ニュース</h2>
+        <!-- 各記事は独立しているため、articleを使う -->
+        <article>
+          <h3>ニュース記事1</h3>
+          <p>ここにニュースの内容が入ります。この記事は独立した内容です。</p>
+          <footer>投稿日: 2024年10月12日</footer>
+        </article>
+
+        <article>
+          <h3>ニュース記事2</h3>
+          <p>ここにもニュースの内容が入ります。この記事も独立した内容です。</p>
+          <footer>投稿日: 2024年10月11日</footer>
+        </article>
+      </section>
+
+      <!-- スポーツセクション -->
+      <section id="sports">
+        <h2>スポーツニュース</h2>
+
+        <article>
+          <h3>スポーツ記事1</h3>
+          <p>スポーツに関するニュースがここに表示されます。</p>
+          <footer>投稿日: 2024年10月10日</footer>
+        </article>
+      </section>
+
+      <!-- テクノロジーセクション -->
+      <section id="tech">
+        <h2>テクノロジーの進展</h2>
+        <p>このセクションでは、テクノロジーに関連するニュースや情報を提供します。</p>
+      </section>      
+    </main>
+
+    <footer>
+      <p>&copy; 2024 ニュースサイト</p>
+    </footer>
+
+  </body>
+</html>
+
+<!--headerタグ-->
+<article>
+  <header>
+    <h1>記事タイトル</h1>
+    <p>投稿日: 2024年10月12日</p>
+  </header>
+  <p>記事の本文</p>
+</article>
+
+<!--asideタグ-->
+<h2>HTMLはマークアップ言語です。</h2>
+<aside>
+  <h2>用語解説</h2>
+  <p>HTMLは「HyperText Markup Language」の略です。</p>
+</aside>
+
+<!--aside独立-->
+<aside class="sidebar">
+  <h2 class="sidebar-title">おすすめリンク</h2>
+  <ul class="sidebar-menu">
+    <li><a href="#">リンク1</a></li>
+    <li><a href="#">リンク2</a></li>
+    <li><a href="#">リンク3</a></li>
+  </ul>
+</aside>
+
+<!--footer ページ全体-->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width", initial-scale="1.0">
+  <title>footerタグの例</title>
+</head>
+<body>
+
+  <header>
+    <h1>私のウェブサイト</h1>
+  </header>
+
+  <main>
+    <article>
+      <h2>セマンティックHTMLとは？</h2>
+      <p>セマンティックHTMLは、タグに意味を持たせてコンテンツをより構造化する方法です。</p>
+    </article>
+  </main>
+
+  <!--footer ページ全体のフッター -->
+  <footer>
+    <p>&copy; 2024 私のウェブサイト. All Rights Reserved.</p>
+    <p><a href="privacy.html">プライバシーポリシー</a> | <a href="terms.html"></a></p>
+  </footer>
+
+</body>
+</html>
+
+<!--footer 記事-->
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>記事のfooterタグの例</title>
+  </head>
+  <body>
+
+    <main>
+      <article>
+        <h2>セマンティックHTMLとは？</h2>
+        <p>セマンティックHTMLは、HTMLタグに意味を持たせてコンテンツを構造化する方法です。</p>
+
+        <!-- 記事のフッター -->
+        <footer>
+          <p>著者: 田中太郎</p>
+          <p>投稿日: 2024年10月12日</p>
+        </footer>
+      </article>
+    </main>
+
+    <!-- ページ全体のフッター -->
+    <footer>
+      <p>&copy; 2024 私のウェブサイト. All Rights Reserved.</p>
+    </footer>
+
   </body>
 </html>
