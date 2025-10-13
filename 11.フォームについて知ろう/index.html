@@ -1,23 +1,75 @@
-<form ______="/submit" method="____">
-  <label for="_________">名前:</label>
-  <input type="____" id="username" name="username" placeholder="名前を入力" required>
+<form action="/submit" method="POST">
+  <label for="username">名前:</label>
+  <input type="text" id="username" name="username" placeholder="名前を入力" required>
 
-  <label for="________">パスワード:</label>
-  <input type="________" id="password" name="password" placeholder="パスワードを入力" required>
+  <label for="password">パスワード:</label>
+  <input type="password" id="password" name="password" placeholder="パスワードを入力" required>
   
   <p>性別を選択:</p>
   <label>
-    <input ____="radio" name="gender" value="male" required> 男
+    <input type="radio" name="gender" value="male" required> 男
   </label>
   <label>
-    <input ____="_____" name="gender" _____="female" _______> 女
+    <input type="radio" name="gender" value="female" required> 女
   </label>
   <br>
   
   <label>
-    <input type="_______" name="subscribe" value="___"> ニュースレターを購読する
+    <input type="checkbox" name="subscribe" value="yes"> ニュースレターを購読する
   </label>
-  
-  <input ____="______" _____="送信">
+
+  <input type="submit" value="送信">
 </form>
   
+
+<!--action-->
+<form action="http://example.com">
+
+</form>
+
+<!--input-->
+<form>
+  <input type="text" name="name" value="名前" placeholder="名前を入力してください"
+</form>
+
+<!--type-->
+<input type="text" name="username" placeholder="名前を入力してください"
+<input type="submit" value="送信">
+
+<!--name-->
+<input type="text" name="username" placeholder="名前を入力">
+<input type="password" name="password" placeholder="パスワードを入力">
+
+<!--value-->
+<input type="text" name="username" value="田中太郎">
+<input type="checkbox" name="subscribe" value="yes"> Sibscribe to newsletter
+<input type="hidden" name="userID" value="12345">
+
+<!--label-->
+<label for="username">Username:</label>
+<input type="text" id="username" name="username">
+
+<label>Username: <input type="text" name="username"></label>
+
+<form action="/submit" method="POST">
+  <label for="username">名前:</label>
+  <input type="text" id="username" name="username" placeholder="名前を入力" required>
+
+  <label for="password">パスワード:</label>
+  <input type="password" id="password" name="password" placeholder="パスワードを入力" required>
+
+  <p>性別を選択</p>
+  <label>
+    <input type="radio" name="gender" value="male" required> 男
+  </label>
+  <label>
+    <input type="radio" name="gender" value="female" required> 女
+  </label>
+  <br>
+
+  <label>
+    <input type="checkbox" name="subscribe" value="yes"> ニュースレターを購読する
+  </label>
+
+  <input type="submit" value="送信">
+</form>
