@@ -7,10 +7,21 @@
   <input 
     type="text" 
     id="username" 
-    name="username" 
+    name="username"
+    minlength="4" 
+    maxlength="10"
     placeholder="ユーザー名を入力してください"
-    
-  >
+    required
+    >
 
   <input type="submit" value="送信">
 </form>
+
+<input type="text" name="username" required>
+<input type="number" name="age" min="19" max="99">
+<input type="date" name="birthdate" min="1900-01-01" max="2025-01-01">
+<input type="text" name="username" minlength="5" maxlength="25">
+<input type="text" name="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" placeholder="例: 000-1234-5678">
+<label>ユーザーID（半角英数）
+  <input type="text" name="num" pattern="^[0-9A-Za-z]+$">
+</label>
